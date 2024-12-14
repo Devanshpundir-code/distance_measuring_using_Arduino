@@ -26,9 +26,9 @@ duration = pulseIn(echoPin, HIGH);
 distanceCm= duration*0.034/2;
 distanceInch = duration*0.0133/2;
 
-lcd.setCursor(0,0); // Sets the location at which subsequent text written to the LCD will be displayed
-lcd.print("Distance: "); // Prints string "Distance" on the LCD
-lcd.print(distanceCm); // Prints the distance value from the sensor
+lcd.setCursor(0,0); 
+lcd.print("Distance: ");
+lcd.print(distanceCm); 
 lcd.print("  cm");
 delay(10);
 lcd.setCursor(0,1);
